@@ -7,25 +7,26 @@
     
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
+    
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    
 
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
     
   </head>
+
+
+<!-- This site is converting visitors into subscribers and customers with  - http://app.rocketbots.io -->
+<script id="rocketbots__widget" src="https://rocketbots.oss-cn-hongkong.aliyuncs.com/webchat/widget/widget.js?cId=411d232109d7acf3b5286e5e4e20fe022f1ea8a61f9a97b6ec13b4bbd281d180"></script>
+<!-- http://app.rocketbots.io -->
+
+
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
   <div class="site-wrap"  id="home-section">
