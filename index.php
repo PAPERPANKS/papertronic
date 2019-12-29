@@ -10,15 +10,30 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">    
+    <script>
+      function myFunction() {
+      var x = document.getElementById("chat_window");
+      var chat_btn = document.getElementById("chat_btn");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        document.getElementById("chat_icon").className = "far fa-times-circle fa-2x";
+        chat_btn.className = "btn btn-danger btn-lg";
+      } else {
+        x.style.display = "none";
+        document.getElementById("chat_icon").className = "far fa-comment-dots fa-2x";
+        chat_btn.className = "btn btn-primary btn-lg";
+      }  
+  }
+</script>
   </head>
 
 <!-- This site is converting visitors into subscribers and customers with  - http://app.rocketbots.io 
 dws63526@zzrgg.com-->
 
-<script id="rocketbots__widget" src="https://rocketbots.oss-cn-hongkong.aliyuncs.com/webchat/widget/widget.js?cId=411d232109d7acf3b5286e5e4e20fe022f1ea8a61f9a97b6ec13b4bbd281d180"></script>
+<!-- <script id="rocketbots__widget" src="https://rocketbots.oss-cn-hongkong.aliyuncs.com/webchat/widget/widget.js?cId=411d232109d7acf3b5286e5e4e20fe022f1ea8a61f9a97b6ec13b4bbd281d180"></script> -->
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -186,8 +201,15 @@ dws63526@zzrgg.com-->
       </div>
     </div>
 
-  
-     
+    <div class="" style="position: fixed; bottom: 5px; right: 20px; z-index: 1000001; box-sizing: border-box; min-width: 60px; overflow: hidden; min-height: 60px;">
+      <div>
+        <button id="chat_btn" type="button" class="btn btn-primary btn-lg" onClick="myFunction();">
+        <i id="chat_icon" style="display:block;" class="far fa-comment-dots fa-2x"></i>
+      </div>
+      <div id="chat_window"style="display:none;">
+        <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/b7f9d845-791d-497c-91fe-6a5bdec5152a"></iframe>
+      </div>
+    </div>
     
   </div> <!-- .site-wrap -->    
   </body>
